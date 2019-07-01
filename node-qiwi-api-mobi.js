@@ -162,7 +162,7 @@ function Qiwi(token) {
             }
             else {
                 var options = {
-                    url: this.apiUri + 'sinap/terms/' + data.message + '/payments',
+                    url: this.apiUri + 'sinap/api/v2/terms/' + data.message + '/payments',
                     headers: this.headers,
                     body: {
                         id: (1000 * Date.now()).toString(),
